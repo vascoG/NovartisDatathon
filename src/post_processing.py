@@ -6,7 +6,7 @@ from pathlib import Path
 if __name__ == "__main__":
     # Load data
     PATH = Path("../data")
-    submission_data = pd.read_csv(PATH / "submissionv1.csv")
+    submission_data = pd.read_csv(PATH / "submissionv2.csv")
     
     # transform prediction into rate within month
 
@@ -23,4 +23,4 @@ if __name__ == "__main__":
 
     # Save data
 
-    submission_data.to_csv(PATH / "submissionv1normalized.csv", index=False)
+    submission_data.to_csv(PATH / "submissionv2normalized.csv", index=False)
